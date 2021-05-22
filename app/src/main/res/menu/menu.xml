@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add_id"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/add_thoughts"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_chat_id"
+        android:icon="@android:drawable/sym_action_chat"
+        android:title="@string/chat_room"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_friendsPost_id"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="@string/view_friendsPost"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="@string/user"
+        android:icon="@drawable/baseline_account_circle_black_18dp"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/action_myProfile_id"
+                android:title="@string/my_profile"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/action_myFriends_id"
+                android:title="@string/my_friends"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/action_friendRequests_id"
+                android:title="@string/friend_requests"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/action_signout_id"
+                android:title="@string/sign_out"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/action_map_id"
+        android:title="@string/map"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_findFriend_id"
+        android:title="@string/find_friends"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity">
+
+    <ProgressBar
+        android:id="@+id/crtAcc_progress_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:progressBarStyleLarge"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/crtAcc_form_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/crtAcc_imageView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:contentDescription="@string/your_memory"
+                android:src="@drawable/pexelsphoto"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/crtAcc_camera_id"
+                android:layout_width="75dp"
+                android:layout_height="61dp"
+                android:contentDescription="@string/add_image"
+                app:layout_constraintBottom_toBottomOf="@+id/crtAcc_imageView_id"
+                app:layout_constraintEnd_toEndOf="@+id/crtAcc_imageView_id"
+                app:layout_constraintStart_toStartOf="@+id/crtAcc_imageView_id"
+                app:layout_constraintTop_toTopOf="@+id/crtAcc_imageView_id"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/crtAcc_username_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/username"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/crtAcc_fullName_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fullname"
+            android:maxLines="1" />
+
+        <AutoCompleteTextView
+            android:id="@+id/crtAcc_emailText_id"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_hint"/>
+
+        <EditText
+            android:id="@+id/crtAcc_password_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:hint="@string/password"/>
+
+        <Button
+            android:id="@+id/crtAcc_create_account_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/create_account"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/or_ald_acc"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/crtAcc_login_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/login_text"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

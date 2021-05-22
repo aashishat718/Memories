@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateJournalActivity">
+
+    <ImageView
+        android:id="@+id/update_imageView_id"
+        android:layout_width="383dp"
+        android:layout_height="262dp"
+        android:src="@drawable/pexelsphoto"
+        android:contentDescription="@string/your_memory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <TextView
+        android:id="@+id/update_username_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="@string/user"
+        app:layout_constraintBottom_toBottomOf="@+id/update_imageView_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/update_date_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/today"
+        app:layout_constraintBottom_toBottomOf="@+id/update_imageView_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_username_id"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/update_camera_id"
+        android:layout_width="75dp"
+        android:layout_height="61dp"
+        android:contentDescription="@string/add_image"
+        app:layout_constraintBottom_toBottomOf="@+id/update_imageView_id"
+        app:layout_constraintEnd_toEndOf="@+id/update_imageView_id"
+        app:layout_constraintStart_toStartOf="@+id/update_imageView_id"
+        app:layout_constraintTop_toTopOf="@+id/update_imageView_id"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <EditText
+        android:id="@+id/update_title_id"
+        android:textSize="20sp"
+        android:layout_width="378dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/input_outline"
+        android:hint="@string/title_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_imageView_id"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <EditText
+        android:id="@+id/update_thoughts_id"
+        android:textSize="16sp"
+        android:layout_width="371dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:background="@drawable/input_outline"
+        android:hint="@string/your_thoughts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_title_id" />
+
+    <ProgressBar
+        android:id="@+id/update_progressBar_id"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_thoughts_id"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <Button
+        android:id="@+id/update_saveButton_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_progressBar_id"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
